@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Cayman.ReservasApp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Cayman.ReservasApp.Application\Cayman.ReservasApp.Application.csproj" />
+    <ProjectReference Include="..\Cayman.ReservasApp.Domain.Tests\Cayman.ReservasApp.Domain.Tests.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
+  </ItemGroup>
+
+</Project>
